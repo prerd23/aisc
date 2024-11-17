@@ -14,10 +14,8 @@ sudoku_puzzle = [
     [0, 0, 0, 0, 8, 0, 0, 7, 9]
 ]
 
-# Global variable to keep track of the Sudoku board
 board = [row[:] for row in sudoku_puzzle]
 
-# Check if a number can be placed in a position
 def is_valid(board, row, col, num):
     # Check row
     if num in board[row]:
